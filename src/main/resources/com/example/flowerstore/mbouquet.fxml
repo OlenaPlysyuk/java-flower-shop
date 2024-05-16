@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="541.0" prefWidth="734.0" styleClass="anchor" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flowerstore.Mbouquet">
+   <children>
+      <TableView fx:id="flowerTableView" layoutX="26.0" layoutY="22.0" prefHeight="200.0" prefWidth="681.0">
+        <columns>
+          <TableColumn fx:id="nameC" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="colorC" prefWidth="75.0" text="Colour" />
+            <TableColumn fx:id="scentC" prefWidth="75.0" text="Scent" />
+            <TableColumn fx:id="sizeC" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="descriptionC" prefWidth="75.0" text="Desc" />
+            <TableColumn fx:id="producerC" prefWidth="75.0" text="Producer" />
+            <TableColumn fx:id="countryC" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="priceC" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="countC" prefWidth="75.0" text="Count" />
+        </columns>
+      </TableView>
+      <Button layoutX="309.0" layoutY="226.0" mnemonicParsing="false" onAction="#GetFlowers" prefHeight="26.0" prefWidth="137.0" text="GetFlowers" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TableView fx:id="accessoriesTableView" layoutX="265.0" layoutY="291.0" prefHeight="181.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="nameA" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="priceA" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="colorA" prefWidth="75.0" text="Colour" />
+        </columns>
+      </TableView>
+      <Button layoutX="320.0" layoutY="491.0" mnemonicParsing="false" onAction="#GetAccess" text="Get Accessories" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="textField" layoutX="59.0" layoutY="323.0" />
+      <TextField fx:id="textField2" layoutX="60.0" layoutY="379.0" />
+      <TextField fx:id="textField3" layoutX="60.0" layoutY="443.0" />
+      <Label layoutX="64.0" layoutY="294.0" text="Enter flower number:" textFill="#fcfcfc">
+         <font>
+            <Font name="Comic Sans MS Italic" size="16.0" />
+         </font></Label>
+      <Label layoutX="84.0" layoutY="356.0" text="Enter quantity:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font></Label>
+      <Label layoutX="52.0" layoutY="418.0" text="Enter accessory number:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Italic" size="16.0" />
+         </font></Label>
+      <Button layoutX="571.0" layoutY="434.0" mnemonicParsing="false" onAction="#Make" prefHeight="37.0" prefWidth="128.0" text="Buy" textFill="#fdfbfb" />
+      <Label fx:id="label" layoutX="80.0" layoutY="447.0" prefHeight="18.0" prefWidth="36.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flowerstore.Actmenu">
+   <children>
+      <Button layoutX="242.0" layoutY="61.0" mnemonicParsing="false" onAction="#switchToSceneMake" prefHeight="34.0" prefWidth="114.0" text="Make a bouquet" textFill="WHITE" />
+      <Button layoutX="243.0" layoutY="130.0" mnemonicParsing="false" onAction="#switchToSceneChooseB" prefHeight="34.0" prefWidth="114.0" text="Choose a bouquet" textFill="WHITE" />
+      <Button layoutX="243.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToFlower" prefHeight="34.0" prefWidth="114.0" text="Choose flowers" textFill="WHITE" />
+      <Button layoutX="268.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToPurchase" prefHeight="34.0" prefWidth="61.0" text="Return" textFill="#f4f1f1" />
+   </children>
+</AnchorPane>

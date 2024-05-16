@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="519.0" prefWidth="752.0" styleClass="anchor" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flowerstore.Chflower">
+   <children>
+      <TableView fx:id="flowerTableView" layoutX="36.0" layoutY="32.0" prefHeight="200.0" prefWidth="681.0">
+         <columns>
+            <TableColumn fx:id="nameC" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colorC" prefWidth="75.0" text="Colour" />
+            <TableColumn fx:id="scentC" prefWidth="75.0" text="Scent" />
+            <TableColumn fx:id="sizeC" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="descriptionC" prefWidth="75.0" text="Desc" />
+            <TableColumn fx:id="producerC" prefWidth="75.0" text="Producer" />
+            <TableColumn fx:id="countryC" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="priceC" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="countC" prefWidth="75.0" text="Count" />
+         </columns>
+      </TableView>
+      <Button layoutX="338.0" layoutY="260.0" mnemonicParsing="false" onAction="#GetFlowers" prefHeight="34.0" prefWidth="100.0" text="GetFlowers" textFill="#f2efef" />
+      <TextField fx:id="textField" layoutX="312.0" layoutY="336.0" />
+      <TextField fx:id="textField2" layoutX="312.0" layoutY="393.0" />
+      <Label layoutX="295.0" layoutY="304.0" text="Enter flower number:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font></Label>
+      <Label layoutX="332.0" layoutY="367.0" text="Enter count:" textFill="#fafafa">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font></Label>
+      <Button layoutX="337.0" layoutY="443.0" mnemonicParsing="false" onAction="#Make" prefHeight="34.0" prefWidth="100.0" text="Buy" textFill="WHITE" />
+      <Label fx:id="label" layoutX="373.0" layoutY="419.0" />
+   </children>
+</AnchorPane>

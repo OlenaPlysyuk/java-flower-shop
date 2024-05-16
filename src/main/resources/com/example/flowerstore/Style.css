@@ -1,0 +1,29 @@
+.anchor{
+    -fx-background-image: url('bg_flowershop.jpg');
+    -fx-background-size: cover;
+    -fx-opacity: 80%;
+}
+.button{
+    -fx-background-color: rgb(232, 177, 238);
+    -fx-background-radius: 30;
+    -fx-color-label-visible: true;
+}
+.button:hover
+{
+    -fx-effect: dropshadow( three-pass-box , black , 1, 0.0 , 0 , 1);
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+}
+.text-field{
+    -fx-background-radius: 30;
+    -fx-color-label-visible: true;
+}
+.text-field:hover
+{
+    -fx-effect: dropshadow( three-pass-box , black , 1, 0.0 , 0 , 1);
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+}
+
